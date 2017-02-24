@@ -5,14 +5,14 @@
   $c-menu-trigger: $c-black-blue;
 
 
-  font-family: $ff-josef;
+  font-family: $ff-poppin;
   #primary-menu > ul {
     margin-right: 0;
     border-right: none;
-    @include nav-color(#707070);
-    @include nav-color(#4A9850, 1);
-    @include nav-color(#0061A3, 2);
-    @include nav-color(#00939A, 3);
+    @include nav-color(#4A4A4A);
+    @include nav-color(#FA7801, 1);
+    @include nav-color(#888C4C, 2);
+    @include nav-color(#2A6573, 3);
   }
 
   #primary-menu-trigger {
@@ -59,8 +59,8 @@
 }
 
 #primary-menu ul li > a {
-  font-family: $ff-josef;
-  font-weight: bold;
+  font-family: $ff-poppin;
+  font-weight: 400;
   letter-spacing: 1px;
   text-transform: none;
   font-size: 17px;

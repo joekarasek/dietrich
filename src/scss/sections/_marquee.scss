@@ -5,9 +5,9 @@
   .swiper-slide.slide2 {
     background-image: url('/assets/slide2.jpg');
   }
-  //.swiper-slide.slide3 {
-  //  background-image: url('/assets/saxton-slide3.jpg');
-  //}
+  .swiper-slide.slide3 {
+    background-image: url('/assets/slide3.jpg');
+  }
 
   .swiper-slide .row {
     transform: translateY(-50%);
@@ -16,82 +16,79 @@
   }
 
   .slide1 {
-    h6 {
-      font-family: $ff-mont;
-      color: #636363;
-      font-size: 16px;
-      font-weight: 400;
-      margin-bottom: 0;
+    h2 {
+      font-family: $ff-poppin;
+      color: #ffffff;
+      font-weight: 300;
     }
-    h1 {
-      @include font-size(136px, 65px, 55px, 65px, 65px);
-      color: #024378;
-      font-family: $ff-cardo;
-      font-weight: 400;
+    .compassionate {
+      font-family: $ff-poppin;
+      color: #91e9f1;
       margin-bottom: 0;
       line-height: 1;
-    }
-    h2 {
-      @include font-size(72px, 60px, 55px, 65px, 65px);
-      color: #3d893f;
       font-weight: 400;
-      font-family: $ff-josef;
-      padding-left: 30px;
+    }
+    .pursuit {
+      font-family: $ff-poppin;
+      color: #d5d79e;
+      font-weight: 700;
     }
     h5 {
-      font-size: 22px;
-      font-family: $ff-mont;
-      color: #5d7278;
-      text-align: right;
-      padding-right: 60px;
-    }
-    a {
-      float: right;
+      font-family: $ff-poppin;
+      font-weight: 400;
+      color: #aabdb1;
+      margin-bottom: 5px;
     }
   }
   .slide2 {
-    text-align: center;
-    h2 {
-      font-family: $ff-cardo;
-      font-weight: 400;
-      color: #024378;
-      margin-bottom: 0;
+    h1 {
+      font-family: $ff-poppin;
+      color: #91e9f1;
+      margin-bottom: 15px;
       line-height: 1.2;
+      font-weight: 400;
+    }
+    .patients {
+      font-family: $ff-poppin;
+      color: #d5d79e;
+      font-weight: 700;
     }
     .stars>h2 {
-      color: #f5e82e;
+      color: #FFD900;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      margin-bottom: 0;
     }
     .copy {
-      font-family: $ff-josef;
+      font-family: $ff-poppin;
+      color: #ffffff;
+      font-weight: 400;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
   }
-  //.slide3 {
-  //  h1 {
-  //    color: $c-white;
-  //    margin-bottom: 0;
-  //    font-weight: 400;
-  //    font-family: $ff-advent;
-  //    line-height: $lh-sm;
-  //  }
-  //  h2 {
-  //    color: $c-white;
-  //    font-weight: 400;
-  //    line-height: $lh-sm;
-  //    font-family: $ff-raleway;
-  //  }
-  //  h4 {
-  //    text-transform: uppercase;
-  //    color: $c-white;
-  //    font-weight:bold;
-  //    font-family: $ff-lato;
-  //    line-height: $lh-sm;
-  //    margin-bottom: $spacing-lg;
-  //  }
-  //  .btn {
-  //    @include lr-padding(80px, 60px, 60px);
-  //  }
-  //}
+  .slide3 {
+    h1 {
+      font-family: $ff-poppin;
+      color: #91e9f1;
+      margin-bottom: 15px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-family: $ff-poppin;
+      color: #CBCF8C;
+      font-weight: 700;
+    }
+    h3 {
+      font-family: $ff-poppin;
+      color: #ffffff;
+      font-weight: 400;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .btn {
+      @include lr-padding(80px, 60px, 60px);
+    }
+  }
 
   .icon-star3 {
     color: $c-star;
