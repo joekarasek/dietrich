@@ -1,13 +1,17 @@
 /// Call to Action Three to One Layout
 .cta__three-to-one {
   background-image: url(/assets/cta-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-color: #D1D6D2;
 
   .flex--wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 30px;
     @media screen and (max-width: $width-md) {
       flex-direction: column;
@@ -20,26 +24,29 @@
       width: 100%;
     }
   }
+  .icon--wrapper {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
   .new-patient {
-    text-align: right;
+    text-align: center;
     .text {
-      color: #ffffff;
-      font-family: $ff-josef;
+      color: #56784F;
+      font-family: $ff-poppin;
       margin-bottom: 0;
       text-transform: uppercase;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
     }
     &-number {
-      color: #ffffff;
-      font-family: $ff-mont;
+      color: #424242;
+      font-family: $ff-lato;
       font-weight: 700;
       margin-bottom: 0;
       line-height: 1;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
       @include font-size(39px, 35px, 30px, 28px, 28px);
       a {
-        @include link-color(#ffffff);
+        @include link-color(#424242);
         &:hover {
           text-decoration: none;
         }
@@ -61,23 +68,21 @@
   }
 
   .existing-patient {
-    text-align: left;
+    text-align: center;
     .text {
-      color: #ffffff;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
-      font-family: $ff-josef;
+      color: #537C85;
+      font-family: $ff-poppin;
       margin-bottom: 0;
       text-transform: uppercase;
     }
     &-number {
-      color: #ffffff;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
-      font-family: $ff-mont;
-      font-weight: 700;
+      color: #424242;
+      font-family: $ff-muli;
+      font-weight: 400;
       margin-bottom: 0;
       line-height: 1;
       a {
-        @include link-color(#ffffff);
+        @include link-color(#424242);
         &:hover {
           text-decoration: none;
         }
