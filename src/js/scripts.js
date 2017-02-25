@@ -20,10 +20,7 @@
     ]
   });
   HelloWorldDevsTysonSteele.itemCarousel('.js-team-carousel', {
-    navText: [
-      '<img src="assets/carousel-arrow.png" alt="navigation arrow">',
-      '<img src="assets/carousel-arrow.png" alt="navigation arrow">'
-    ]
+    nav: false,
   });
 
 })(jQuery, HelloWorldDevsTysonSteele);
