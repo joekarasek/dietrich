@@ -13,7 +13,7 @@
   background-position: center top;
   position: relative;
   @media (max-width: $width-sm) {
-    background-color: $c-mobile-bg;
+    background-color: #6287a2;
     background-image: none;
     .row>div {
       text-align: center;
@@ -61,7 +61,7 @@
   .mobile-insurance-fix {
     display: none;
     @media (max-width: $width-sm) {
-      margin-top: -100px;
+      margin-top: -25px;
       display: block;
     }
   }
