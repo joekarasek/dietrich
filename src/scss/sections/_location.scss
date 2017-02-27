@@ -3,7 +3,7 @@
 
   .info--wrapper {
     @media screen and ( min-width: $width-md + 1 ) {
-      position: absolute;
+      //position: absolute;
       top: 0;
       width: 100%;
       z-index: 1;
@@ -14,7 +14,7 @@
   .flex--wrapper {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 30px;
     padding-bottom: 30px;
     @media screen and (max-width: $width-md) {
@@ -31,94 +31,78 @@
   }
 
   .info--text {
-    .doctors {
-      font-family: $ff-mont;
-      font-weight: 400;
-      color: #636363;
-    }
     .address {
-      font-family: $ff-josef;
-      color: #222222;
+      color: #585756;
+      padding-top: 30px;
+    }
+    .existing-patient-text {
+      color: #585756;
+      padding-bottom: 15px;
+    }
+    .existing-patient-number {
+      color: #585756;
+      font-weight: 700;
     }
     .info--map-link {
-      font-family: $ff-lato;
-      color: #3b5c0d;
+      color: #4990E2;
       text-decoration: underline;
       font-size: 16px;
     }
+    @include social-media-link('facebook');
+    @include social-media-link('yelp');
+    @include social-media-link('instagram');
+    @include social-media-link('youtube');
   }
 
-  .info--number {
+  .info--logo {
+    h5 {
+      color: #585756;
+      padding-bottom: 15px;
+    }
+    img {
+      max-width: 300px;
+    }
+  }
+
+  .info--contact {
     .new-patient-text {
-      color: #3b5c0d;
-      font-weight: 700;
+      padding-top: 30px;
+      color: #4D4D4D;
+      font-weight: 400;
       line-height: 1;
-      margin-bottom: 0;
+      margin-bottom: 15px;
     }
     .new-patient-number {
-      font-family: $ff-lato;
-      font-weight: 900;
-      color: #024378;
+      color: #4D4D4D;
       line-height: 1;
+      font-family: $ff-lato;
+      font-weight: 700;
     }
     a:hover {
       text-decoration: none;
     }
-    .existing-patient-text {
-      font-family: $ff-josef;
-      color: #444444;
-      padding-bottom: 15px;
-    }
-    .existing-patient-number {
-      font-family: $ff-josef;
-      color: #565656;
-      font-weight: 700;
-    }
-
   }
-
-
-  .hours-table {
-    &--title {
-      text-transform: uppercase;
-      color: #575757;
-      font-family: $ff-josef;
-      font-weight: 600;
-      margin-bottom: 5px;
-      padding-top: $spacing-md;
-    }
-    th {
-      width: 1px;
-      white-space: nowrap;
-      padding-right: 20px;
-      text-align: left;
-      font-size: 16px;
-      padding-bottom: 5px;
-    }
-    td {
-      text-align: center;
-      font-size: 16px;
-      padding-bottom: 5px;
-    }
-
-    table {
-      max-width: 250px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 0;
-      margin-bottom: 0;
-      color: $c-grey !important;
-    }
-  }
-
 
   #google-map5, .map--wrapper {
-    height: 720px;
+    height: 550px;
     @media (max-width: $width-md) {
       height: 300px;
     }
   }
 
+  .social-media-links {
+    text-align: center;
+    width: 100%;
+    a {
+      float: none !important;
+    }
+    padding-bottom: 30px;
+  }
+
+  @include social-media-link('facebook');
+  @include social-media-link('yelp');
+  @include social-media-link('google');
+  @include social-media-link('google-plus');
 
 }
 

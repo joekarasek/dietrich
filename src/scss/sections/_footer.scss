@@ -1,7 +1,7 @@
 //Overrides for Canvas
 #footer {
   position: relative;
-  background-color: #024378;
+  background-color: #466781;
   border-top: none;
   a {
     @include link-color($c-white);
@@ -25,14 +25,14 @@
     }
   }
 
-  @include social-media-link('facebook');
-  @include social-media-link('yelp');
-  @include social-media-link('instagram');
-  @include social-media-link('youtube');
+  //@include social-media-link('facebook');
+  //@include social-media-link('yelp');
+  //@include social-media-link('instagram');
+  //@include social-media-link('youtube');
 
   .flex--wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     @media screen and (max-width: $width-md) {
       flex-direction: column-reverse;
       .social-media-links {

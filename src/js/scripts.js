@@ -9,7 +9,7 @@
   HWD.requestAppointment('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
 
   // ======= Google Maps =======
-  HWD.googleMap('#google-map5', '33.9527789,-84.337107', '33.9502465,-84.3370638');
+  HWD.googleMap('#google-map5', '45.5253267,-122.6973743', '45.5253267,-122.6973743');
 
   // ======= Carousels =======
   HWD.marqueeCarousel({ autoplay: false });

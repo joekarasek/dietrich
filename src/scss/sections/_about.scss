@@ -17,6 +17,7 @@
     padding-bottom: 60px;
     @media screen and (max-width: $width-md) {
       background-image: none;
+      padding-bottom: 0px;
       img {
         margin-top: -20px;
       }
