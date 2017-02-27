@@ -1,16 +1,17 @@
 #section-insurance {
 
-  $c-no-insurance: $c-btn;
-  $c-sub-header: $c-black-blue;
-  $c-preventative: $c-btn;
+  $c-no-insurance: #91E9F1;
+  $c-sub-header: #CBCF8C;
+  $c-preventative: #FFFFFF;
   $c-copy: $c-black-blue;
   $c-mobile-bg: $c-grey-yellow;
 
   padding-top: 50px;
-  background-image: url('/assets/no-insurance-bkgd.jpg');
+  background-image: url('/assets/insurance-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  position: relative;
   @media (max-width: $width-sm) {
     background-color: $c-mobile-bg;
     background-image: none;
@@ -27,30 +28,31 @@
 
   h2 {
     color: $c-no-insurance;
-    font-family: $ff-advent;
-    font-weight: 400;
-    @include font-size(95px, 80px, 55px, 50px, 50px);
+    font-family: $ff-poppin;
+    font-weight: 700;
+    @include font-size(70px, 58px, 40px, 40px, 35px);
     margin-bottom: 0;
+    text-transform: uppercase;
   }
   h4 {
-    @include h3;
+    //@include h3;
     color: $c-sub-header;
-    font-family: $ff-raleway;
+    font-family: $ff-poppin;
+    font-weight: 400;
   }
   h3 {
     color: $c-preventative;
-    font-weight: 900;
-    font-family: $ff-lato;
-    @include font-size(32px, 30px, 28px, 28px, 20px);
+    font-weight: 400;
+    font-family: $ff-poppin;
+    @include font-size(34px, 28px, 22px, 22px, 20px);
   }
   .btn {
     padding-top: 10px;
     padding-bottom: 10px;
     @include lr-padding(80px, 70px, 60px, 60px, 40px);
-    margin-bottom: 100px;
   }
   h6 {
-    font-family: $ff-lato;
+    font-family: $ff-poppin;
     font-weight: 700;
     color: $c-copy;
   }
@@ -62,5 +64,14 @@
       margin-top: -100px;
       display: block;
     }
+  }
+  .floating-container-fixed-bg-height {
+    @media screen and (min-width: $width-sm - 1) {
+      position: absolute !important;
+      top: 0;
+      width: 100%;
+      @include vertical-center();
+    }
+
   }
 }

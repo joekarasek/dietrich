@@ -1,5 +1,5 @@
 #section-reviews {
-  background-image: url('/assets/reviews-bg.jpeg');
+  background-image: url('/assets/reviews-bg.jpg');
   background-attachment: fixed;
   @include parallax-background;
   //@media  screen and (max-width: $width-md) {
@@ -20,8 +20,9 @@
     margin-bottom: $spacing-xs;
     margin-top: $spacing-md;
     font-weight: 400;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.48);
-    color: $c-white;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    color: #7B3F67;
+    font-family: $ff-poppin;
   }
   .row {
     padding-bottom: $spacing-lg;
@@ -36,4 +37,12 @@
   }
 
     @include birdeye-footer();
+}
+
+
+
+#bf-revz-widget-1777387319 {
+  @media screen and (max-width: 400px) {
+    max-height: 350px;
+  }
 }

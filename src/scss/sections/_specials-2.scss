@@ -67,9 +67,9 @@
   }
   .price {
     font-weight:700;
-    font-size: 68px;
+    font-size: 65px;
     color: #FFFFFF;
-    font-family: $ff-mont;
+    font-family: $ff-poppin;
     letter-spacing: -1.55px;
     display:flex;
     align-self:center;
@@ -89,7 +89,7 @@
     font-weight:700;
     font-size: 26px;
     text-align:left;
-    color:#757575;
+    //color:blue;
     line-height:30px;
     font-family: $ff-josef;
     @media (max-width:767px) {
@@ -99,9 +99,18 @@
     @media (max-width:500px) {
       font-size:18px;
     }
+    &.specials-line-1 {
+      color: #7B3F67;
+    }
+    &.specials-line-2 {
+      color: #81B251;
+    }
+    &.specials-line-3 {
+      color: #436972;
+    }
   }
   p {
-    //font-family: $opensans;
+    font-family: $ff-poppin;
     font-size: 16px;
     color: #757575;
     line-height:23px;
@@ -119,13 +128,13 @@
 
   }
   .box-1 {
-    background:#1D97BF;
+    background:#7B3F67;
   }
   .box-2 {
-    background:#49820A;
+    background:#81B251;
   }
   .box-3 {
-    background:#47477B;
+    background:#009DC2;
   }
   .box-wrap {
     @media (max-width:767px) {
