@@ -1,7 +1,7 @@
 #section-reviews {
   background-image: url('/assets/reviews-bg.jpg');
-  background-attachment: fixed;
-  //@include parallax-background;
+  //background-attachment: fixed;
+  @include parallax-background;
   //@media  screen and (max-width: $width-md) {
   //  background-attachment: inherit;
   //  background-image: none;
