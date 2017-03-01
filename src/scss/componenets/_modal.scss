@@ -24,7 +24,7 @@
 }
 
 button.close {
-  font-family: sans-serif;
+  font-family: $ff-poppin;
   font-size: 50px;
   position: relative;
   color: $c-black-blue;
@@ -33,4 +33,12 @@ button.close {
 
 #requestAppointmentForm {
   @include iPhoneFormFix;
+}
+
+.modal-body {
+  img {
+    @media screen and (max-width: $width-md) {
+      display: none;
+    }
+  }
 }

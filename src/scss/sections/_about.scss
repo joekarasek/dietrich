@@ -15,7 +15,7 @@
   }
   .about--wrapper {
     background-image: url('/assets/BIO.jpg');
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 60px;
@@ -44,6 +44,12 @@
       color: #585756;
       font-weight: 400;
       font-size: 16px;
+    }
+    &--mobile-image {
+      height: 400px;
+      background-image: url(/assets/bio-template_mobile.jpg);
+      background-size: cover;
+      background-position: center center;
     }
   }
 

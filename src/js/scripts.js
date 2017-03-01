@@ -12,7 +12,7 @@
   HWD.googleMap('#google-map5', '45.5253267,-122.6973743', '45.5253267,-122.6973743');
 
   // ======= Carousels =======
-  HWD.marqueeCarousel({ autoplay: false });
+  HWD.marqueeCarousel({ autoplay: 7000 });
   HWD.itemCarousel('.js-services-carousel', {
     navText: [
       '<img src="assets/carousel-arrow.png" alt="navigation arrow">',
@@ -20,7 +20,22 @@
     ]
   });
   HWD.itemCarousel('.js-team-carousel', {
-    nav: false,
+    navText: [
+      '<img src="assets/carousel-arrow.png" alt="navigation arrow">',
+      '<img src="assets/carousel-arrow.png" alt="navigation arrow">'
+    ],
+    responsive: {
+      480: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4,
+        nav: false
+      }
+    }
   });
 
 })(jQuery, HelloWorldDevsTysonSteele);
