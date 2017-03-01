@@ -100,4 +100,22 @@
       margin-bottom: 15px;
     }
   }
+  .services-carousel--wrapper {
+    padding: 30px 60px;
+    background-color: #D5DAD7;
+    border-radius: 15px;
+  }
+
+  .owl-carousel .owl-nav [class*=owl-] {
+    right: -15px;
+  }
+  .owl-carousel:hover .owl-nav .owl-next {
+    right: -15px;
+  }
+  .owl-carousel .owl-nav .owl-prev {
+    left: -15px;
+  }
+  .owl-carousel:hover .owl-nav .owl-prev {
+    left: -15px;
+  }
 }
